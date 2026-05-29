@@ -1,0 +1,1 @@
+module.exports = { content: ["./app/**/*.{js,jsx,ts,tsx}"], theme: { extend: { colors: { saffron: { DEFAULT: "#E8621A", light: "#FF7F3E" }, navy: { DEFAULT: "#0B1C2E" }, cream: "#FFF9F0", gold: "#F5C842" }, fontFamily: { display: ["Baloo Tamma 2","cursive"], body: ["DM Sans","sans-serif"] } } }, plugins: [] }
