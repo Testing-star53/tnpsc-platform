@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>TNPSC Group 2 & Group 4 — Complete Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --saffron:#E8621A;--saffron-l:#FF7F3E;--saffron-d:#C0410A;
+  --navy:#0B1C2E;--navy-m:#162840;--navy-l:#1E3A5A;
+  --gold:#F5C842;--cream:#FFF9F0;--white:#ffffff;
+  --text:#1A1A2E;--muted:#6B7280;--border:#E8E0D5;
+  --green:#22916E;--radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:62px;box-shadow:0 2px 24px rgba(0,0,0,.4);}
+.nav-logo{font-family:'Baloo Tamma 2',cursive;font-size:1.25rem;font-weight:800;color:#fff;text-decoration:none;}
+.nav-logo span{color:var(--gold);}
+.nav-links{display:flex;gap:24px;align-items:center;}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.85rem;font-weight:500;transition:.2s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-btn{background:var(--saffron);color:#fff;border:none;padding:9px 22px;border-radius:9px;font-size:.85rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;text-decoration:none;transition:.2s;}
+.nav-btn:hover{background:var(--saffron-l);}
+
+/* HERO */
+.hero{min-height:93vh;background:var(--navy);position:relative;display:flex;align-items:center;padding:80px 5vw 60px;overflow:hidden;}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 50%,rgba(232,98,26,.18),transparent 70%),radial-gradient(ellipse 40% 40% at 10% 80%,rgba(245,200,66,.08),transparent 60%);}
+.hero-grid{position:absolute;right:0;top:0;width:55%;height:100%;opacity:.05;background-image:repeating-linear-gradient(60deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%),repeating-linear-gradient(-60deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%);background-size:40px 40px;}
+.hero-content{position:relative;z-index:2;max-width:680px;}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,200,66,.15);border:1px solid rgba(245,200,66,.3);border-radius:100px;padding:6px 16px;margin-bottom:24px;}
+.badge-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.badge span{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+h1{font-family:'Baloo Tamma 2',cursive;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:20px;}
+h1 em{font-style:normal;color:var(--gold);}
+.hero-sub{color:rgba(255,255,255,.62);font-size:1.05rem;line-height:1.78;max-width:560px;margin-bottom:36px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-p{background:var(--saffron);color:#fff;padding:14px 30px;border-radius:11px;font-weight:700;font-size:.95rem;text-decoration:none;transition:.25s;border:2px solid transparent;display:inline-block;}
+.btn-p:hover{background:var(--saffron-l);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,98,26,.4);}
+.btn-o{background:transparent;color:#fff;padding:14px 30px;border-radius:11px;font-weight:600;font-size:.95rem;text-decoration:none;transition:.25s;border:2px solid rgba(255,255,255,.3);display:inline-block;}
+.btn-o:hover{border-color:var(--gold);color:var(--gold);}
+.stats{display:flex;gap:40px;margin-top:52px;flex-wrap:wrap;}
+.stat{border-left:3px solid var(--saffron);padding-left:14px;}
+.stat-n{font-family:'Baloo Tamma 2',cursive;font-size:1.9rem;font-weight:800;color:#fff;}
+.stat-l{color:rgba(255,255,255,.45);font-size:.78rem;margin-top:2px;}
+
+/* SECTIONS */
+section{padding:80px 5vw;}
+.sec-tag{font-size:.73rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--saffron);margin-bottom:10px;}
+.sec-title{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--navy);margin-bottom:14px;line-height:1.2;}
+.sec-sub{color:var(--muted);font-size:1rem;max-width:560px;line-height:1.7;}
+.sec-head{margin-bottom:48px;}
+
+/* TABS */
+.tabs-wrap{background:#fff;border-bottom:1px solid #EFEFEF;}
+.tab-bar{display:flex;gap:4px;background:#F3F4F6;border-radius:12px;padding:4px;width:fit-content;margin-bottom:44px;}
+.tab-btn{padding:11px 26px;border:none;background:transparent;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;color:var(--muted);transition:.2s;}
+.tab-btn.active{background:var(--saffron);color:#fff;box-shadow:0 4px 12px rgba(232,98,26,.3);}
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.card{background:var(--cream);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.25s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(11,28,46,.09);}
+.card-ico{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:14px;}
+.ico-o{background:rgba(232,98,26,.12);}
+.ico-g{background:rgba(245,200,66,.2);}
+.ico-gr{background:rgba(34,145,110,.12);}
+.ico-n{background:rgba(11,28,46,.1);}
+.card h3{font-family:'Baloo Tamma 2',cursive;font-size:1.05rem;font-weight:700;margin-bottom:8px;color:var(--navy);}
+.card ul{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.card ul li{font-size:.88rem;color:var(--muted);line-height:1.6;}
+.card ul li::before{content:"→ ";color:var(--saffron);font-weight:700;}
+
+/* TABLE */
+.tbl-wrap{margin-top:40px;overflow-x:auto;}
+table{width:100%;border-collapse:collapse;border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);}
+thead tr{background:var(--navy);color:#fff;}
+th{padding:13px 18px;text-align:left;font-size:.8rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;}
+td{padding:13px 18px;font-size:.88rem;border-bottom:1px solid #EFEFEF;}
+tbody tr:nth-child(even){background:#F9F5EE;}
+tbody tr:hover{background:#FFF3E8;}
+.badge-s{display:inline-block;padding:3px 10px;border-radius:100px;font-size:.73rem;font-weight:700;}
+.s1{background:#FEE9D8;color:#C0410A;}
+.s2{background:#D1FAE5;color:#065F46;}
+.s3{background:#DBEAFE;color:#1E40AF;}
+
+/* ROADMAP */
+.road-sec{background:var(--navy);position:relative;overflow:hidden;}
+.road-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 100% 0%,rgba(232,98,26,.12),transparent 60%);}
+.road-sec .sec-title{color:#fff;}
+.road-sec .sec-tag{color:var(--gold);}
+.road-sec .sec-sub{color:rgba(255,255,255,.5);}
+.road-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+.road-track{position:relative;padding-left:28px;}
+.road-track::before{content:'';position:absolute;left:13px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--saffron),var(--gold),var(--green));}
+.road-item{position:relative;margin-bottom:36px;padding-left:42px;}
+.road-item::before{content:attr(data-n);position:absolute;left:-15px;width:30px;height:30px;border-radius:50%;background:var(--saffron);color:#fff;font-family:'Baloo Tamma 2',cursive;font-size:.82rem;font-weight:800;display:flex;align-items:center;justify-content:center;border:3px solid var(--navy);}
+.road-item:nth-child(2)::before{background:var(--gold);color:var(--navy);}
+.road-item:nth-child(3)::before{background:var(--green);}
+.phase-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px 26px;transition:.2s;}
+.phase-card:hover{background:rgba(255,255,255,.09);border-color:rgba(232,98,26,.4);}
+.ph-label{font-size:.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--saffron-l);margin-bottom:5px;}
+.ph-title{font-family:'Baloo Tamma 2',cursive;font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:7px;}
+.ph-dur{display:inline-block;background:rgba(245,200,66,.15);color:var(--gold);font-size:.73rem;font-weight:600;padding:3px 10px;border-radius:100px;margin-bottom:13px;}
+.ph-tasks{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.ph-tasks li{color:rgba(255,255,255,.62);font-size:.86rem;display:flex;align-items:flex-start;gap:8px;}
+.ph-tasks li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;}
+
+/* SYLLABUS */
+.syl-sec{background:#fff;}
+.syl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;}
+.syl-chip{border-radius:12px;padding:18px;border:1.5px solid var(--border);transition:.2s;cursor:default;}
+.syl-chip:hover{border-color:var(--saffron);transform:translateY(-3px);box-shadow:0 8px 20px rgba(232,98,26,.1);}
+.syl-chip.hot{border-color:var(--saffron);background:rgba(232,98,26,.04);}
+.syl-e{font-size:1.5rem;margin-bottom:7px;}
+.syl-chip h4{font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.syl-chip p{font-size:.76rem;color:var(--muted);line-height:1.5;}
+.hot-tag{display:inline-block;font-size:.63rem;background:var(--saffron);color:#fff;padding:2px 7px;border-radius:4px;margin-top:6px;font-weight:700;}
+
+/* TIPS */
+.tips-sec{background:var(--cream);}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
+.tip-card{background:#fff;border-radius:var(--radius);padding:26px;border-top:4px solid var(--saffron);box-shadow:0 4px 16px rgba(0,0,0,.05);}
+.tip-card:nth-child(2){border-top-color:var(--gold);}
+.tip-card:nth-child(3){border-top-color:var(--green);}
+.tip-card:nth-child(4){border-top-color:#7C3AED;}
+.tip-n{font-family:'DM Serif Display',serif;font-size:2.4rem;color:#EDEBE8;line-height:1;margin-bottom:9px;}
+.tip-card h3{font-family:'Baloo Tamma 2',cursive;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:7px;}
+.tip-card p{font-size:.86rem;color:var(--muted);line-height:1.75;}
+
+/* FAQ */
+.faq-sec{background:#fff;}
+.faq-list{max-width:760px;display:flex;flex-direction:column;gap:11px;}
+.faq-item{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.93rem;font-weight:600;color:var(--navy);}
+.faq-arr{width:20px;height:20px;border-radius:50%;background:#F3F4F6;display:flex;align-items:center;justify-content:center;font-size:.65rem;transition:.3s;flex-shrink:0;}
+.faq-item.open .faq-arr{background:var(--saffron);color:#fff;transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:18px;}
+.faq-a p{padding:0 22px;font-size:.88rem;color:var(--muted);line-height:1.8;}
+
+/* CTA */
+.cta-sec{background:linear-gradient(135deg,var(--saffron) 0%,var(--saffron-d) 100%);padding:70px 5vw;text-align:center;}
+.cta-sec h2{font-family:'Baloo Tamma 2',cursive;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:#fff;margin-bottom:12px;}
+.cta-sec p{color:rgba(255,255,255,.8);font-size:1rem;margin-bottom:30px;max-width:520px;margin-left:auto;margin-right:auto;}
+.cta-btn{display:inline-block;background:#fff;color:var(--saffron);padding:14px 36px;border-radius:11px;font-weight:800;font-size:1rem;text-decoration:none;transition:.2s;}
+.cta-btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.2);}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,.5);padding:36px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:.83rem;}
+.f-logo{font-family:'Baloo Tamma 2',cursive;font-weight:800;font-size:1.05rem;color:#fff;}
+.f-logo span{color:var(--gold);}
+footer p{font-size:.78rem;margin-top:3px;}
+.f-links{display:flex;gap:18px;}
+.f-links a{color:rgba(255,255,255,.45);text-decoration:none;font-size:.8rem;transition:.2s;}
+.f-links a:hover{color:var(--gold);}
+
+/* ANIMATIONS */
+.fade{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
+.fade.in{opacity:1;transform:none;}
+
+/* MOBILE */
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .road-grid{grid-template-columns:1fr;}
+  section{padding:60px 5vw;}
+  .stats{gap:22px;}
+  footer{flex-direction:column;text-align:center;}
+  .f-links{flex-wrap:wrap;justify-content:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">TNPSC <span>Roadmap</span></a>
+  <div class="nav-links">
+    <a href="#exam-info">Exam Info</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#tips">Tips</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="/register" class="nav-btn">Register & Access Papers</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content fade">
+    <div class="badge"><span class="badge-dot"></span><span>2025 – 2026 Exam Cycle</span></div>
+    <h1>TNPSC <em>Group 2</em> &amp; <em>Group 4</em><br>Complete Roadmap</h1>
+    <p class="hero-sub">Tamil Nadu government jobs-க்கு உங்கள் முழுமையான வழிகாட்டி. Eligibility, Exam Pattern, Syllabus, Study Plan — எல்லாமே ஒரே இடத்தில்.</p>
+    <div class="hero-btns">
+      <a href="/register" class="btn-p">Register & Access Papers</a>
+      <a href="#roadmap" class="btn-o">Study Roadmap →</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-n">200</div><div class="stat-l">Questions (Prelims)</div></div>
+      <div class="stat"><div class="stat-n">300</div><div class="stat-l">Total Marks</div></div>
+      <div class="stat"><div class="stat-n">6</div><div class="stat-l">Month Plan</div></div>
+      <div class="stat"><div class="stat-n">8</div><div class="stat-l">Core Subjects</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXAM INFO TABS -->
+<section class="tabs-wrap" id="exam-info">
+  <div class="sec-head fade">
+    <div class="sec-tag">Exam Overview</div>
+    <h2 class="sec-title">உங்கள் Exam தேர்ந்தெடுங்கள்</h2>
+    <p class="sec-sub">Group 2 மற்றும் Group 4 — different eligibility & pattern. Switch செய்து details பாருங்கள்.</p>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('g2',this)">📋 Group 2 / IIA</button>
+    <button class="tab-btn" onclick="switchTab('g4',this)">📄 Group 4</button>
+  </div>
+
+  <!-- GROUP 2 -->
+  <div id="tab-g2" class="tab-pane active">
+    <div class="cards">
+      <div class="card fade"><div class="card-ico ico-o">🎯</div><h3>Posts (Group 2)</h3><ul><li>Sub Registrar</li><li>Deputy Tahsildar</li><li>Labour Inspector</li><li>Revenue Inspector</li><li>Junior Employment Officer</li><li>Asst. Commercial Tax Officer</li></ul></div>
+      <div class="card fade"><div class="card-ico ico-g">🎓</div><h3>Eligibility</h3><ul><li>Any UG Degree</li><li>Min Age: 21 Years</li><li>Max Age OC: 30 Years</li><li>BC/MBC: No age limit</li><li>SC/ST: No age limit</li></ul></div>
+      <div class="card fade"><div class="card-ico ico-gr">📊</div><h3>Exam Pattern</h3><ul><li>Prelims: 200 Qs / 300 Marks / 3hrs</li><li>GS (175) + Mental Ability (25)</li><li>Mains: Descriptive — 300 Marks</li><li>Interview: 40 Marks</li><li>Total: 3 Stages</li></ul></div>
+      <div class="card fade"><div class="card-ico ico-n">📝</div><h3>Group IIA Posts</h3><ul><li>Assistant Personal Clerk</li><li>Steno-Typist</li><li>Typist (Various Depts)</li><li>No Interview for IIA</li><li>Min Age: 18/20 Years</li></ul></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Stage</th><th>Paper / Subject</th><th>Questions</th><th>Marks</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge-s s1">Stage 1</span> Prelims</td><td>General Studies + Mental Ability</td><td>200</td><td>300</td><td>3 Hours</td></tr>
+          <tr><td><span class="badge-s s2">Stage 2</span> Mains</td><td>Paper I — GS (Descriptive)</td><td>—</td><td>300</td><td>3 Hours</td></tr>
+          <tr><td><span class="badge-s s3">Stage 3</span> Interview</td><td>Oral Test / Personal Interview</td><td>—</td><td>40</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- GROUP 4 -->
+  <div id="tab-g4" class="tab-pane">
+    <div class="cards">
+      <div class="card fade"><div class="card-ico ico-o">🎯</div><h3>Posts (Group 4)</h3><ul><li>Village Administrative Officer</li><li>Junior Assistant</li><li>Bill Collector</li><li>Field Surveyor</li><li>Draftsman / Typist</li><li>Junior Cooperative Inspector</li></ul></div>
+      <div class="card fade"><div class="card-ico ico-g">🎓</div><h3>Eligibility</h3><ul><li>10th / 12th / UG (post-wise)</li><li>Min Age: 18 Years</li><li>Max Age OC: 30 Years</li><li>SC/ST: No upper age limit</li></ul></div>
+      <div class="card fade"><div class="card-ico ico-gr">📊</div><h3>Exam Pattern</h3><ul><li>Single Exam — Objective Type</li><li>GS (100) + Tamil/English (100)</li><li>200 Qs / 300 Marks / 3hrs</li><li>No Mains, No Interview</li><li>Merit-based selection only</li></ul></div>
+      <div class="card fade"><div class="card-ico ico-n">💡</div><h3>Why Group 4?</h3><ul><li>Easiest entry to TN Govt jobs</li><li>Single-stage exam</li><li>12th pass eligible (VAO)</li><li>Good stepping stone for Group 2</li></ul></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Stage</th><th>Paper / Subject</th><th>Questions</th><th>Marks</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge-s s1">Stage 1</span></td><td>General Studies</td><td>100</td><td>150</td><td>3 Hours</td></tr>
+          <tr><td><span class="badge-s s1">Stage 1</span></td><td>General Tamil / General English</td><td>100</td><td>150</td><td>(Combined)</td></tr>
+          <tr><td colspan="5" style="color:var(--green);font-weight:600;font-size:.83rem;">✓ No Mains. No Interview. Selection purely on Prelims merit.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="road-sec" id="roadmap">
+  <div class="sec-head fade">
+    <div class="sec-tag">Study Plan</div>
+    <h2 class="sec-title">6-Month Preparation Roadmap</h2>
+    <p class="sec-sub">Phase-by-phase plan. Group 2 & Group 4 இரண்டுமே ஒரே preparation-ல் crack பண்ணலாம்.</p>
+  </div>
+  <div class="road-grid">
+    <div class="road-track">
+      <div class="road-item fade" data-n="1">
+        <div class="phase-card">
+          <div class="ph-label">Phase 1</div><div class="ph-title">Foundation — Subject Basics</div>
+          <div class="ph-dur">Month 1 – 2</div>
+          <ul class="ph-tasks"><li>NCERT 6–10: History, Geography, Science</li><li>Samacheer Kalvi books — TN chapters</li><li>Indian Polity: Lakshmikanth basics</li><li>Daily 1 hr current affairs reading</li><li>Group 4 syllabus 70% covered here</li></ul>
+        </div>
+      </div>
+      <div class="road-item fade" data-n="2">
+        <div class="phase-card">
+          <div class="ph-label">Phase 2</div><div class="ph-title">Core Subjects Deep Dive</div>
+          <div class="ph-dur">Month 2 – 3</div>
+          <ul class="ph-tasks"><li>Indian Economy + TN Economy basics</li><li>Science & Technology — Space, Bio</li><li>Mental Ability — 20 questions daily</li><li>General Tamil / English grammar</li><li>Weekly mock tests (Group 4 pattern)</li></ul>
+        </div>
+      </div>
+      <div class="road-item fade" data-n="3">
+        <div class="phase-card">
+          <div class="ph-label">Phase 3</div><div class="ph-title">Tamil Nadu Special Topics</div>
+          <div class="ph-dur">Month 3 – 4</div>
+          <ul class="ph-tasks"><li>TN History: Cholas, Pallavas, Pandyas</li><li>TN Geography — Districts, Rivers</li><li>Indian National Movement leaders</li><li>Constitution: FRs, DPSPs, Preamble</li><li>Bi-weekly full mock tests</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="road-track">
+      <div class="road-item fade" data-n="4">
+        <div class="phase-card">
+          <div class="ph-label">Phase 4</div><div class="ph-title">Current Affairs Intensive</div>
+          <div class="ph-dur">Month 4 – 5</div>
+          <ul class="ph-tasks"><li>Last 1 year current affairs capsule</li><li>National & International — TN focus</li><li>Awards, Appointments, Sports</li><li>ISRO, Defence, Health news</li><li>50 CA questions daily practice</li></ul>
+        </div>
+      </div>
+      <div class="road-item fade" data-n="5">
+        <div class="phase-card">
+          <div class="ph-label">Phase 5</div><div class="ph-title">Intensive Mock Tests</div>
+          <div class="ph-dur">Month 5 – 6</div>
+          <ul class="ph-tasks"><li>3–4 full-length mocks per week</li><li>Analyse weak areas after every test</li><li>Previous year papers 2015–2024</li><li>200 Qs in 180 min — time mgmt</li><li>Group 2 Mains prep begins</li></ul>
+        </div>
+      </div>
+      <div class="road-item fade" data-n="6">
+        <div class="phase-card">
+          <div class="ph-label">Phase 6</div><div class="ph-title">Revision + Exam Strategy</div>
+          <div class="ph-dur">Final 2–3 Weeks</div>
+          <ul class="ph-tasks"><li>Quick revision with mind maps</li><li>Focus on high-weightage topics only</li><li>Avoid new topics — revise deeply</li><li>1 mock test every 2 days</li><li>Sleep 7–8 hrs; exam-day strategy</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYLLABUS -->
+<section class="syl-sec" id="syllabus">
+  <div class="sec-head fade">
+    <div class="sec-tag">Syllabus Breakdown</div>
+    <h2 class="sec-title">Core Topics — Group 2 & Group 4</h2>
+    <p class="sec-sub">இந்த topics இரண்டு exams-க்கும் common. 🔥 = High weightage.</p>
+  </div>
+  <div class="syl-grid">
+    <div class="syl-chip hot fade"><div class="syl-e">🌏</div><h4>History & Culture</h4><p>Ancient, Medieval, Modern India + TN History</p><span class="hot-tag">🔥 High Weightage</span></div>
+    <div class="syl-chip hot fade"><div class="syl-e">🗺️</div><h4>Geography</h4><p>India & TN Geography, Rivers, Districts</p><span class="hot-tag">🔥 High Weightage</span></div>
+    <div class="syl-chip hot fade"><div class="syl-e">⚖️</div><h4>Indian Polity</h4><p>Constitution, Parliament, State Govt</p><span class="hot-tag">🔥 High Weightage</span></div>
+    <div class="syl-chip fade"><div class="syl-e">💰</div><h4>Economy</h4><p>GDP, Budget, Banking, TN Economy</p></div>
+    <div class="syl-chip fade"><div class="syl-e">🔬</div><h4>Science & Tech</h4><p>Physics, Chemistry, Biology 6–10 level</p></div>
+    <div class="syl-chip hot fade"><div class="syl-e">📰</div><h4>Current Events</h4><p>National, International, TN specific news</p><span class="hot-tag">🔥 High Weightage</span></div>
+    <div class="syl-chip fade"><div class="syl-e">🧮</div><h4>Mental Ability</h4><p>Arithmetic, Series, Coding-Decoding</p></div>
+    <div class="syl-chip fade"><div class="syl-e">🇮🇳</div><h4>Freedom Movement</h4><p>Leaders, Events 1857–1947</p></div>
+    <div class="syl-chip fade"><div class="syl-e">🌿</div><h4>Environment</h4><p>Biodiversity, Climate, National Parks</p></div>
+    <div class="syl-chip fade"><div class="syl-e">📖</div><h4>General Tamil/English</h4><p>Grammar, Comprehension, Vocabulary</p></div>
+    <div class="syl-chip fade"><div class="syl-e">🏛️</div><h4>Art & Culture</h4><p>Tamil Literature, Festivals, Dance forms</p></div>
+    <div class="syl-chip fade"><div class="syl-e">🏗️</div><h4>TN Administration</h4><p>Districts, Panchayat Raj, Welfare Schemes</p></div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="tips-sec" id="tips">
+  <div class="sec-head fade">
+    <div class="sec-tag">Pro Strategies</div>
+    <h2 class="sec-title">தேர்வில் வெல்வதற்கான Tips</h2>
+  </div>
+  <div class="tips-grid">
+    <div class="tip-card fade"><div class="tip-n">01</div><h3>Samacheer Kalvi First</h3><p>TNPSC questions primarily come from State Board books (6th–12th). NCERT is secondary. Samacheer-ஐ deeply read பண்ணுவது மிகவும் அவசியம்.</p></div>
+    <div class="tip-card fade"><div class="tip-n">02</div><h3>Daily Current Affairs</h3><p>The Hindu Tamil / Dinamalar daily படிக்கவும். Monthly current affairs capsules compile பண்ணி வையுங்கள். Last 6 months events அதிகமாக கேக்கப்படும்.</p></div>
+    <div class="tip-card fade"><div class="tip-n">03</div><h3>Previous Year Papers</h3><p>2015–2024 வரை அனைத்து question papers-ஐ solve பண்ணுங்கள். Pattern மற்றும் topic frequency தெளிவாக புரியும்.</p></div>
+    <div class="tip-card fade"><div class="tip-n">04</div><h3>Mock Test Analysis</h3><p>Mock test எழுதுவது மட்டும் போதாது — analysis மிகவும் முக்கியம். தவறான answers-ஐ note பண்ணி மறுபடியும் படிக்கவும்.</p></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec" id="faq">
+  <div class="sec-head fade">
+    <div class="sec-tag">FAQ</div>
+    <h2 class="sec-title">அடிக்கடி கேட்கப்படும் கேள்விகள்</h2>
+  </div>
+  <div class="faq-list fade">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Group 2 & Group 4 preparation ஒரே time-ல் possible-ஆ?<span class="faq-arr">▼</span></button><div class="faq-a"><p>ஆம்! Group 4 syllabus, Group 2 Prelims-ல் 80% overlap ஆகிறது. Group 2-க்கு prepare பண்ணினால் Group 4-க்கும் ready-ஆவீர்கள். Group 4 is a great confidence booster.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Negative marking இருக்கா?<span class="faq-arr">▼</span></button><div class="faq-a"><p>இல்லை. TNPSC Group 2 மற்றும் Group 4 இரண்டிலும் negative marking கிடையாது. எல்லா questions-க்கும் attempt பண்ணுங்கள்.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">எத்தனை மாதம் prepare பண்ண வேண்டும்?<span class="faq-arr">▼</span></button><div class="faq-a"><p>Group 4-க்கு 3–4 months. Group 2-க்கு 6–9 months minimum. Consistent daily study (4–6 hours) போதுமானது.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Coaching centre போகணுமா?<span class="faq-arr">▼</span></button><div class="faq-a"><p>Self-study மட்டுமே போதுமானது. Samacheer books + Previous Year Papers + Online Mock Tests = Solid preparation. Group 2 Mains-க்கு guidance useful-ஆ இருக்கும்.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Question papers எப்படி access பண்றது?<span class="faq-arr">▼</span></button><div class="faq-a"><p>Register பண்ணி admin approval கிடைத்த பிறகு dashboard-ல் எல்லா previous year papers-ஐயும் download பண்ணலாம். Approval usually 24 hours-க்குள் கிடைக்கும்.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">General Tamil compulsory-ஆ?<span class="faq-arr">▼</span></button><div class="faq-a"><p>Group 4-ல் General Tamil அல்லது General English — ஒன்றை select பண்ணலாம். English medium students General English opt பண்ணலாம்.</p></div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <h2>உங்கள் Government Job Dream — இப்போதே Start பண்ணுங்கள்!</h2>
+  <p>Register பண்ணி previous year question papers access பண்ணுங்கள். Admin approve பண்ணிய உடனே dashboard ready!</p>
+  <a href="/register" class="cta-btn">Register பண்ணுங்கள் →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div><div class="f-logo">TNPSC <span>Roadmap</span></div><p>Group 2 & Group 4 — Complete Guide 2025–26</p></div>
+  <div class="f-links">
+    <a href="#exam-info">Exam Info</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#tips">Tips</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</footer>
+
+<script>
+function switchTab(g,btn){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-'+g).classList.add('active');
+}
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  const open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!open)item.classList.add('open');
+}
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});
+},{threshold:.1});
+document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
